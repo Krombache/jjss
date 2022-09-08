@@ -1,0 +1,55 @@
+<!DOCTYPEhtml>
+<html>
+  <head>
+  <title>что-то на умном</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <section class="form">
+      <h1>Отклик </h1>
+    <div class="form-name">
+      <input type="text" placeholder="name" id="name">
+    </div>
+    <div class="form-mail">
+      <input type="text" placeholder="e-mail" id="email">
+    </div>
+  </section>
+
+    <div class="check">
+      <input type="radio" name="cell" id="cell1">
+      <input type="radio" name="cell" id="cell2">
+      <input type="radio" name="cell" id="cell3">
+      <label for="cell1" class="ok"></label>
+      <p>пук</p>
+      <label for="cell2" class="ok"></label>
+      <p>пук</p>
+      <label for="cell3"class="ok"></label>
+      <p>пук</p>
+    </div>
+
+    <div class="check2">
+      <input type="checkbox">
+      <p>пук</p>
+    </div>
+    <input type="submit" style="height: auto" onclick="SendMessage()" id="btn">
+
+       <script type="text/javascript">
+        function SendMessage() {
+        const inputName = document.getElementById("name");
+        const inputEmail = document.getElementById("email");
+
+        if (inputName.value == "" && inputEmail.value == "") {
+          inputName.style.borderColor = "red";
+          inputEmail.style.borderColor = "red";
+        }
+      }
+    </script>
+
+    <footer>
+      <script src="assets/script/index.js" type="text/javascript"></script>
+    </footer>
+
+</body>
+</html>
